@@ -23,7 +23,7 @@ app = Flask(__name__, static_url_path='')
 mysql = MySQL()
 app.config['MYSQL_DATABASE_USER'] = 'root'
 app.config['MYSQL_DATABASE_PASSWORD'] = 'root'
-app.config['MYSQL_DATABASE_DB'] = 'sampledb'
+app.config['MYSQL_DATABASE_DB'] = 'awsdb'
 app.config['MYSQL_DATABASE_HOST'] = 'localhost'
 mysql.init_app(app)
 
