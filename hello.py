@@ -45,7 +45,7 @@ def listcoursesform():
 def listcourses():
     # Get inputs from form
     room =  request.form['room']
-    q = "select distinct Course from classes where Room like '%"+room+"%'"
+    q = "select distinct course from csefall where "+room+" ='Y'"
     print(q)
     # execute and get results
     cursor = mysql.connect().cursor()
